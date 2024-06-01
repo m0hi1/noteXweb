@@ -16,9 +16,9 @@ export default authMiddleware({
   ],
 })
 
-export const config = {
-  matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
-}
+// export const config = {
+//   matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
+// }
 
 // https://www.googleapis.com/auth/userinfo.email
 // https://www.googleapis.com/auth/userinfo.profile
