@@ -15,15 +15,17 @@ const UploadCareButton = ({ onUpload }: Props) => {
     typeof LR.UploadCtxProvider.prototype & LR.UploadCtxProvider
   >(null)
 
-  useEffect(() => {
-    const handleUpload = async (e: any) => {
-      const file = await onUpload(e.detail.cdnUrl)
-      if (file) {
-        router.refresh()
-      }
-    }
-    ctxProviderRef.current.addEventListener('file-upload-success', handleUpload)
-  }, [])
+  // useEffect(() => {
+  //   const handleUpload = async (e: any) => {
+  //     const file = await onUpload(e.detail.cdnUrl)
+  //     if (file) {
+  //       router.refresh()
+  //     }
+  //   }
+  //   ctxProviderRef.current.addEventListener('file-upload-success', handleUpload)
+  // }, [
+  
+  // ])
 
   return (
     <div>
